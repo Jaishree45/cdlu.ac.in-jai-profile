@@ -1,434 +1,709 @@
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
+    <head>
+       
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <!-- Meta, title, CSS, favicons, etc. -->
+        <meta charset="utf-8">
+        <meta charset="ISO-8859-15">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <meta http-equiv="cache-control" content="max-age=0" />
+        <meta http-equiv="cache-control" content="no-cache" />
+        <meta http-equiv="cache-control" content="no-store" />
+        <meta http-equiv="expires" content="0" />
+        <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+        <meta http-equiv="pragma" content="no-cache" />
+        <meta http-equiv="pragma" content="no-store" />
+        <meta name="csrf-token" content="">
+        
 
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta charset="utf-8">
-    <meta charset="ISO-8859-15">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Fee Receipt | Chaudhary Devi Lal University, Sirsa</title>
+                    <link rel="icon" href="https://onlinecdlu.ac.in/assets/uploads//logo/favicon.png" type="image/x-icon" />             
+                
+        
+        <!-- Bootstrap -->
+        <link href="https://onlinecdlu.ac.in/assets/vendors/bootstrap/bootstrap.min.css" rel="stylesheet">
+        
+        <!-- Font Awesome -->
+        <link href="https://onlinecdlu.ac.in/assets/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    
+        <!-- Custom Theme Style -->
+         
+                    <link href="https://onlinecdlu.ac.in/assets/css/custom.css" rel="stylesheet">
+                
+                    <link  id="themeStylesheet" href="https://onlinecdlu.ac.in/assets/css/theme/rebecca-purple.css" rel="stylesheet">
+                
+        <!-- jQuery -->
+        <script src="https://onlinecdlu.ac.in/assets/js/jquery.min.js"></script>
+        <script src="https://onlinecdlu.ac.in/assets/js/jquery.validate.js"></script>
+		<script src="https://onlinecdlu.ac.in/assets/js/formValidator.js"></script>
+        
+         <script type="text/javascript" src="https://onlinecdlu.ac.in/assets/vendors/toastr/toastr.min.js"></script>
+        
+                
+    </head>
 
-    <title>Fee Receipt | Chaudhary Devi Lal University, Sirsa</title>
-
-    <link rel="icon" href="./assets/uploads/logo/favicon.png" type="image/x-icon" />
-
-    <!-- Bootstrap -->
-    <link href="./assets/vendors/bootstrap/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Font Awesome -->
-    <link href="./assets/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-
-    <!-- Custom Theme Style -->
-    <link href="./assets/css/custom.css" rel="stylesheet">
-
-    <link id="themeStylesheet" href="./assets/css/theme/rebecca-purple.css" rel="stylesheet">
-
-    <!-- jQuery -->
-    <script src="./assets/js/jquery.min.js"></script>
-    <script src="./assets/js/jquery.validate.js"></script>
-    <script src="./assets/js/formValidator.js"></script>
-
-    <script type="text/javascript" src="./assets/vendors/toastr/toastr.min.js"></script>
-
-</head>
-
-<body class="nav-md">
-
-<div id="preloader"></div>
-
-<div class="container body">
-<div class="main_container">
-
-<style>
-.nav_title2 span {
-    line-height: 20px !important;
-    margin-left: 16px !important;
-    margin-top: 17px !important;
-    font-size: 21px !important;
-    float: right !important;
-    margin-right: 10px !important;
-    margin-bottom: 10px !important;
-    color: #fff;
-}
-
-@media screen and (max-width: 480px) {
+    <body class="nav-md">
+        <div id="preloader"></div>    
+        <div class="container body">
+            <div class="main_container">
+                 <style>
     .nav_title2 span {
-        font-size: 11px !important;
+        line-height: 20px !important;
+        margin-left: 16px !important;
+        margin-top: 17px !important;
+        font-size: 21px !important;
+        float: right !important;
+        margin-right: 10px !important;
+        margin-bottom: 10px !important;
+        color: #fff;
     }
-}
+
+    @media screen and (max-width: 480px) {
+        .nav_title2 span {
+            font-size: 11px !important;
+        }
+    }
+</style>
+<div class="col-md-3 left_col">
+    <div class="left_col scroll-view">
+
+        <div class="navbar nav_title2" style="border: 0;">
+
+            <a href="https://onlinecdlu.ac.in/dashboard.html">
+                <span>Chaudhary Devi Lal University</span>
+            </a>
+        </div>
+        <div class="clearfix" style=""></div>
+        <!-- sidebar menu -->
+        <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+            <div class="menu_section">
+                
+                <ul class="nav side-menu">
+                                            <li><a href="https://onlinecdlu.ac.in/dashboard.html"><i class="fa fa-user"></i> Profile</a> </li>
+                                                                                                    <li><a href="https://onlinecdlu.ac.in/dashboard/fee.html"><i class="fa fa-file"></i> Fee Payment</a> </li>
+                                                <li><a href="https://onlinecdlu.ac.in/dashboard/fee_receipt.html"><i class="fa fa-file"></i> Fee Receipt</a> </li>
+                                                    <li><a href="https://onlinecdlu.ac.in/student/reappear_form.html"><i class="fa fa-file"></i> Reappear</a></li>
+                         
+                                                
+                                        
+					
+					                    
+                    <!-- <li><a href="https://onlinecdlu.ac.in/dashboard.html"><i class="fa fa-dashboard"></i> Dashboard</a>  </li> -->
+
+                                                                
+
+                    <!--    -->
+
+                    <!--  -->
+
+                                        <!-- CDLU ADMIN -->
+                    
+                                                                                                        
+                    
+
+                    <!-- END BLOCK -->
+
+                    <!--   -->
+
+                    <!--   -->
+
+                    <!--  -->
+
+
+                    <!--    -->
+
+
+                    <!--  -->
+
+                    <!--    -->
+
+                    <!--  -->
+
+                    <!--  -->
+
+                    <!--      -->
+
+                    <!--  
+                        <li><a  href="https://onlinecdlu.ac.in/academic/subject/index.html"><i class="fa fa-folder-open"></i> Subject </a></li>
+                          -->
+
+                    <!--  
+                        <li><a  href="https://onlinecdlu.ac.in/academic/syllabus/index.html"><i class="fa fa-clipboard"></i> Syllabus</a> </li>
+                          -->
+
+                    <!--      -->
+
+                    <!--                        <li> <a  href="https://onlinecdlu.ac.in/academic/routine/index.html"> <i class="fa fa-clock-o"></i>Class Routine</a></li>
+                        -->
+
+                    <!--     
+                        <li><a href="https://onlinecdlu.ac.in/guardian/index.html"><i class="fa fa-paw"></i> Guardian</a> </li>
+                     -->
+
+
+                    
+                        <li><a><i class="fa fa-group"></i> Manage Student <span class="fa fa-chevron-down"></span></a>
+                            <ul class="nav child_menu">
+                                                                
+                                <!--  -->
+
+                                
+                                <!--  -->
+
+                                                                                                <!--
+									 
+									-->
+                                                                                                                                                                                                                                                                                                                                                                                                <!--  -->
+                                
+                                                                    <li><a href="https://onlinecdlu.ac.in/student/reevaluation.html">Re-Evaluation Form</a></li>
+                                
+                                                                    <li><a href="https://onlinecdlu.ac.in/student/all_result.html">Results</a></li>
+                                
+                                
+                                
+                                                                                                <!--                                     <li><a href="https://onlinecdlu.ac.in/student/migration_form/index.html">Self Migration</a></li>
+                                 -->
+                                                                                                    <li><a href="https://onlinecdlu.ac.in/student/student_migration_request/index.html">Apply Inter Migration</a></li>
+                                                                                                    <li><a href="https://onlinecdlu.ac.in/student/profile_revision_request/index.html">Profile Revision Request</a></li>
+                                                                                                                                
+
+                                <!-- 							 -->
+                                <!--                                                                                                              
+                                     
+                                     
+                                     
+                                     
+                                     
+                                     
+                                     
+                                                                          -->
+                            </ul>
+                        </li>
+
+                    
+
+
+
+                    
+                    
+
+
+                    <!--  -->
+
+                    <!--     
+                       <li>  <a href="https://onlinecdlu.ac.in/assignment/index/.html"><i class="fa fa-file-word-o"></i> Assignment</a></li> 
+                      -->
+
+                    <!--  
+                       <li>  <a href="https://onlinecdlu.ac.in/assignment/submission/index/.html"><i class="fa fa-upload"></i> Submission</a></li>
+                         -->
+
+                    <!--      -->
+
+                    <!--  -->
+
+                    <!--      -->
+
+                    <!--       -->
+
+                    <!--      -->
+
+                    <!--     
+                        <li><a><i class="fa fa-file-text-o"></i> Exam Mark <span class="fa fa-chevron-down"></span></a>
+                            <ul class="nav child_menu">
+                                                                                                                                                                                                    <li><a href="https://onlinecdlu.ac.in/exam/marksheet/index.html">Mark Sheet</a></li>
+                                                                                                    <li><a href="https://onlinecdlu.ac.in/exam/resultcard/index.html">Result Card</a></li>
+                                                               
+                                                                                                                                    
+                            </ul>
+                        </li>
+                     -->
+
+                    <!--  -->
+
+                    <!--  -->
+
+                    <!--     
+                        <li><a><i class="fa fa-book"></i> Library <span class="fa fa-chevron-down"></span></a>
+                            <ul class="nav child_menu">
+                                                                    <li><a href="https://onlinecdlu.ac.in/library/book/index.html">Book</a></li>
+                                                                                                                                    <li><a href="https://onlinecdlu.ac.in/library/issue/index.html">Issue & Return</a></li>
+                                                                                                    <li><a href="https://onlinecdlu.ac.in/library/ebook/index.html">E-Book</a></li>
+                                                            </ul>
+                        </li> 
+                     -->
+
+                    <!--         
+                        <li><a><i class="fa fa-bus"></i> Transport <span class="fa fa-chevron-down"></span></a>
+                            <ul class="nav child_menu">
+                                                                    <li><a href="https://onlinecdlu.ac.in/transport/vehicle/index.html">Vehicle</a></li>
+                                                                                                    <li><a href="https://onlinecdlu.ac.in/transport/route/index.html">Transport Route</a></li>
+                                                                                            </ul>
+                        </li>  
+                     -->
+
+                    <!--  -->
+
+                    <!--     
+                        <li><a href="https://onlinecdlu.ac.in/message/inbox.html"><i class="fa fa-comments-o"></i> Message</a></li>                   
+                     -->
+
+                    <!--             -->
+
+                    <!--    -->
+
+                    <!--             
+                        <li><a><i class="fa fa-bullhorn"></i> Announcement <span class="fa fa-chevron-down"></span></a>
+                            <ul class="nav child_menu">
+                                                                    <li><a href="https://onlinecdlu.ac.in/announcement/notice/index.html">Notice</a></li>
+                                                                                                    <li><a href="https://onlinecdlu.ac.in/announcement/news/index.html">News</a></li>
+                                                                                                    <li><a href="https://onlinecdlu.ac.in/announcement/holiday/index.html">Holiday</a></li>
+                                                            </ul>
+                        </li>  
+                     -->
+
+                    <!--     
+                        <li><a href="https://onlinecdlu.ac.in/event/index.html"><i class="fa fa fa-calendar-check-o"></i> Event</a></li>
+                     -->
+
+                    <!--      -->
+
+
+                    <!--                 
+                        <li><a><i class="fa fa-calculator"></i> Accounting <span class="fa fa-chevron-down"></span></a>
+                            <ul class="nav child_menu">
+                                                                                             
+                                                                    
+                                                                            <li><a href="https://onlinecdlu.ac.in/accounting/invoice/due.html">Due Invoice</a></li>
+                                                                        
+                                                                        
+                                   
+                                        <li><a href="https://onlinecdlu.ac.in/accounting/receipt/duereceipt.html">Due Receipt</a></li>
+                                        <li><a href="https://onlinecdlu.ac.in/accounting/receipt/paidreceipt.html">Paid Receipt</a></li>
+                                        
+                                        
+                                                                                                    
+                                                                        
+                                                                                                
+                            </ul>
+                        </li> 
+                     -->
+                                            <li><a><i class="fa fa-graduation-cap"></i> Hostel<span class="fa fa-chevron-down"></span></a>
+                            <ul class="nav child_menu">
+                                                                    <li><a href="https://onlinecdlu.ac.in/hostel/book_bed.html">Book Bed</a></li>
+                                
+                                
+                                                                <!--
+                                                                
+                                -->
+                                                                                                                                                                                                                                
+                                <!--  -->
+
+
+                                <!--  -->
+
+
+                                
+                                
+                                                                
+                            </ul>
+                        </li>
+                                       
+                    
+                                            <li><a><i class="fa fa-graduation-cap"></i> Convocation<span class="fa fa-chevron-down"></span></a>
+                            <ul class="nav child_menu">
+                                                                    <li><a href="https://onlinecdlu.ac.in/convocation/student_registration.html">Registration</a></li>
+                                
+                                                                    <li><a href="https://onlinecdlu.ac.in/convocation/venue_details.html">Venue Details</a></li>
+                                
+                                
+                                                                    <li><a href="https://onlinecdlu.ac.in/convocation/convocation_guidelines.html">Guidelines</a></li>
+                                
+
+
+                            </ul>
+                        </li>
+                    
+                    
+                    
+
+                                            <li><a><i class="fa fa-image"></i>E-Grievance <span class="label bg-red blink ">New</span><span class="fa fa-chevron-down"></span></a>
+                            <ul class="nav child_menu">
+                                                                                                                                    <li><a href="https://onlinecdlu.ac.in/e_grievance/grievance_complaints/index.html">Complaints/Correction</a></li>
+                                                                                                                                 
+                            </ul>
+                        </li> 
+                     
+
+                   
+                                        <!--
+                                        -->
+                                        
+                    
+
+                    
+
+
+                    
+
+                    
+                    
+
+                    
+                    
+                    <!--      
+                    <li><a><i class="fa fa-image"></i>Media Gallery <span class="fa fa-chevron-down"></span></a>
+                        <ul class="nav child_menu">
+                                                            <li><a href="https://onlinecdlu.ac.in/gallery/index.html">Gallery</a></li>
+                                                            
+                                <li><a href="https://onlinecdlu.ac.in/gallery/image/index.html">Gallery Image</a></li>
+                                                   </ul>
+                    </li> 
+                      -->
+
+                    <!--  -->
+
+                    
+                    <!-- <li><a><i class="fa fa-lock"></i>Profile <span class="fa fa-chevron-down"></span></a>
+                        <ul class="nav child_menu">
+                            <li><a href="https://onlinecdlu.ac.in/profile.html">My Profile</a></li>
+                            <li><a href="https://onlinecdlu.ac.in/profile/password.html">Reset Password</a></li>
+                                                                                        <li><a href="https://onlinecdlu.ac.in/accounting/invoice/due.html">Invoice</a></li>
+                                                            
+                              
+                                                                    <li><a href="https://onlinecdlu.ac.in/usercomplain/index.html">Complain</a></li>    
+                                                                                                    <li><a href="https://onlinecdlu.ac.in/userleave/index.html">Leave Application</a></li>    
+                                                                                            
+                            <li><a href="https://onlinecdlu.ac.in/auth/logout.html">Log Out</a></li>
+                        </ul>
+                    </li>   -->
+
+
+
+                    
+                                        
+                                                                                                                                                                
+                </ul>
+            </div>
+        </div>
+        <!-- /sidebar menu -->
+    </div>
+</div>
+   
+                <!-- top navigation -->
+                 <div class="top_nav">
+    <div class="nav_menu">
+        <nav>
+            <div class="col-md-1">
+                <div class="nav toggle">
+                    <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+                </div>
+            </div>
+            <div class="col-md-7 ">
+                <div class="school-name">
+                                            Department of Computer Science & Engineering , Chaudhary Devi Lal University, Sirsa                                    </div>
+            </div>
+            <div class="col-md-4">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="">
+                        <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                                                                        <img src="https://onlinecdlu.ac.in/assets/images//default-user.png" alt="" width="60" /> 
+                                                        
+                            JAI SHREE                            <span class=" fa fa-angle-down"></span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-usermenu pull-right">
+                            <!-- <li><a href="https://onlinecdlu.ac.in/profile/index.html"> Profile</a></li> -->
+                            <li><a href="https://onlinecdlu.ac.in/profile/password.html">Reset Password</a></li>
+                            <li><a href="https://onlinecdlu.ac.in/auth/logout.html"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
+                        </ul>
+                    </li>                      
+                </ul>
+            </div>
+        </nav>
+    </div>
+</div>   
+                <!-- /top navigation -->
+                
+                <div class="right_col" role="main" >                  
+                    <style type="text/css">
+    .remove{ 
+        font-weight: bold;
+        font-size: 12px;
+        cursor: pointer;
+        float: right;
+    }
+    #message_div{ 
+        padding: 10px 10px 10px 10px;
+        margin-bottom: 10px;
+    }
 </style>
 
-<div class="col-md-3 left_col">
-<div class="left_col scroll-view">
 
-<div class="navbar nav_title2" style="border: 0;">
-
-    <a href="./dashboard.html">
-        <span>Chaudhary Devi Lal University</span>
-    </a>
-
+<script type="text/javascript">
+    $(function () {
+        $('#message_div').delay(10000).fadeOut();
+        $('.remove').click(function () {
+           $('#message_div').hide();
+        });
+    });
+</script>                    <!-- page content -->
+                    <div class="row">
+    <div class="col-md-12 col-sm-12 col-xs-12">
+        <div class="x_panel">
+            <div class="x_title">
+                <h3 class="head-title"><i class="fa fa-calendar"></i> Fee Receipts</h3>
+                <ul class="nav navbar-right panel_toolbox">
+                    <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a></li>
+                </ul>
+                <div class="clearfix"></div>
+            </div>
+            <div class="x_content">
+                <div class="" data-example-id="togglable-tabs">
+                    <ul class="nav nav-tabs bordered">
+                        <li class="active">
+                            <a href="#tab_year_list" role="tab" data-toggle="tab" aria-expanded="true">
+                                <i class="fa fa-list-ol"></i> List                            </a>
+                        </li>
+                    </ul>
+                    <br/>
+                    <div class="tab-content">
+                        <div class="tab-pane fade in active" id="tab_year_list">
+                            <div class="x_content">
+                                <table id="datatable-responsive" class="table table-striped table-bordered dt-responsive nowrap" cellspacing="0" width="100%">
+                                    <thead>
+                                        <th>#sl</th>
+                                        <th>PRN No.</th>
+                                        <th>Name</th>
+                                        <th>Father Name</th>
+                                        <th>Email Address</th>
+                                        <th>Mobile No.</th>
+                                        <!-- <th>Course</th> -->
+                                        <th>Semester</th>
+                                        <th>Payment Type</th>
+                                        <th>Transaction Number</th>
+                                        <th>Total Fees</th>
+                                        <th>Payment Date</th>
+                                        <th>Payment Status</th>
+                                        <th>Action</th>
+                                    </thead>
+                                    <tbody>
+                                                                                                                                    <tr role="row">
+                                                    <td >1</td>
+                                                    <td>25111116850049</td>
+                                                    <td>JAI SHREE</td>
+                                                    <td>PARDEEP KUMAR</td>
+                                                    <td>1451jai@gmail.com</td>
+                                                    <td>9416383219</td> 
+                                                    <!-- <td>Bachelor of Technology Computer Science & Engineering (AI & ML)</td> -->
+                                                    <td>Semester-II</td>
+                                                    <td>Semester Fees</td>
+                                                    <td>176760893232939655350201</td>
+                                                    <td>26000</td>
+                                                    <td>2026-01-05 15:58:52</td>
+                                                    <td>Response pending from bank side.<br>Please contact university fee counter.</td>
+                                                    <td><a href="https://onlinecdlu.ac.in/dashboard/fee_receipt_print/176760893232939655350201.html" class="btn btn-success btn-xs"> <i class="fa fa-download"></i> Receipt</a></td>
+                                                </tr>
+                                                                                            <tr role="row">
+                                                    <td >2</td>
+                                                    <td>25111116850049</td>
+                                                    <td>JAI SHREE</td>
+                                                    <td>PARDEEP KUMAR</td>
+                                                    <td>1451jai@gmail.com</td>
+                                                    <td>9416383219</td> 
+                                                    <!-- <td>Bachelor of Technology Computer Science & Engineering (AI & ML)</td> -->
+                                                    <td>Semester-II</td>
+                                                    <td>Semester Fees</td>
+                                                    <td>1767609055193807942050201</td>
+                                                    <td>26000</td>
+                                                    <td>2026-01-05 16:00:55</td>
+                                                    <td>Response pending from bank side.<br>Please contact university fee counter.</td>
+                                                    <td><a href="https://onlinecdlu.ac.in/dashboard/fee_receipt_print/1767609055193807942050201.html" class="btn btn-success btn-xs"> <i class="fa fa-download"></i> Receipt</a></td>
+                                                </tr>
+                                                                                            <tr role="row">
+                                                    <td >3</td>
+                                                    <td>25111116850049</td>
+                                                    <td>JAI SHREE</td>
+                                                    <td>PARDEEP KUMAR</td>
+                                                    <td>1451jai@gmail.com</td>
+                                                    <td>9416383219</td> 
+                                                    <!-- <td>Bachelor of Technology Computer Science & Engineering (AI & ML)</td> -->
+                                                    <td>Semester-II</td>
+                                                    <td>Semester Fees</td>
+                                                    <td>176761254122020603850201</td>
+                                                    <td>26000</td>
+                                                    <td>2026-01-05 16:59:01</td>
+                                                    <td>Response pending from bank side.<br>Please contact university fee counter.</td>
+                                                    <td><a href="https://onlinecdlu.ac.in/dashboard/fee_receipt_print/176761254122020603850201.html" class="btn btn-success btn-xs"> <i class="fa fa-download"></i> Receipt</a></td>
+                                                </tr>
+                                                                                            <tr role="row">
+                                                    <td >4</td>
+                                                    <td>25111116850049</td>
+                                                    <td>JAI SHREE</td>
+                                                    <td>PARDEEP KUMAR</td>
+                                                    <td>1451jai@gmail.com</td>
+                                                    <td>9416383219</td> 
+                                                    <!-- <td>Bachelor of Technology Computer Science & Engineering (AI & ML)</td> -->
+                                                    <td>Semester-II</td>
+                                                    <td>Semester Fees</td>
+                                                    <td>176761282842473363450201</td>
+                                                    <td>26000</td>
+                                                    <td>2026-01-05 17:03:48</td>
+                                                    <td>SUCCESS</td>
+                                                    <td><a href="https://onlinecdlu.ac.in/dashboard/fee_receipt_print/176761282842473363450201.html" class="btn btn-success btn-xs"> <i class="fa fa-download"></i> Receipt</a></td>
+                                                </tr>
+                                                                
+                                                                            </tbody>					
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
-<div class="clearfix"></div>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#datatable-responsive').DataTable({
+            dom: 'Bfrtip',
+            iDisplayLength: 50,
+            buttons: [
+                'copyHtml5',
+                'excelHtml5',
+                'csvHtml5',
+                'pdfHtml5',
+                'pageLength'
+            ],
+            search: true,
+            responsive: true
+        });
+    });
+</script>
+                    <!-- /page content -->
+                </div>
+                <!-- footer content -->
+                <footer class="footer no-print">
+    <div class="pull-right">
+        <p class="white">
+                             Copyright © Chaudhary Devi Lal University 
+                     </p>       
+    </div>
+    <div class="clearfix"></div>
+</footer>   
+                <!-- /footer content -->
+            </div>
+        </div>
+        
+        <!-- Bootstrap -->
+        <script src="https://onlinecdlu.ac.in/assets/vendors/bootstrap/bootstrap.min.js"></script>    
+        
+        <!--   Start   -->   
+        <link href="https://onlinecdlu.ac.in/assets/vendors/datatables/rowReorder/rowReorder.dataTables.min.css" rel="stylesheet">
+        <link href="https://onlinecdlu.ac.in/assets/vendors/datatables/rowReorder/responsive.dataTables.min.css" rel="stylesheet">
+        
+        <link href="https://onlinecdlu.ac.in/assets/vendors/datatables/buttons.dataTables.min.css" rel="stylesheet"> 
+        <link href="https://onlinecdlu.ac.in/assets/vendors/datatables/dataTables.bootstrap.css" rel="stylesheet"> 
+        <script src="https://onlinecdlu.ac.in/assets/vendors/datatables/tools/jquery.dataTables.min.js"></script>
+        <script src="https://onlinecdlu.ac.in/assets/vendors/datatables/tools/dataTables.buttons.min.js"></script>
+        <script src="https://onlinecdlu.ac.in/assets/vendors/datatables/tools/pdfmake.min.js"></script>
+        <script src="https://onlinecdlu.ac.in/assets/vendors/datatables/tools/jszip.min.js"></script>
+        <script src="https://onlinecdlu.ac.in/assets/vendors/datatables/tools/vfs_fonts.js"></script>
+        <script src="https://onlinecdlu.ac.in/assets/vendors/datatables/tools/buttons.html5.min.js"></script> 
+        <script src="https://onlinecdlu.ac.in/assets/vendors/datatables/dataTables.bootstrap.js"></script> 
+        
+        <script src="https://onlinecdlu.ac.in/assets/vendors/datatables/rowReorder/dataTables.rowReorder.min.js"></script> 
+        <script src="https://onlinecdlu.ac.in/assets/vendors/datatables/rowReorder/dataTables.responsive.min.js"></script> 
+    
+       <!-- dataTable with buttons end -->       
+        <link href="https://onlinecdlu.ac.in/assets/vendors/toastr/toastr.min.css" rel="stylesheet">
+       <!-- Custom Theme Scripts -->       
+           
+       <script src="https://onlinecdlu.ac.in/assets/js/custom.js"></script>  
+
+       <script src="https://onlinecdlu.ac.in/assets/css/sweetalert2.min.css"></script>  
+       <script src="https://onlinecdlu.ac.in/assets/js/sweetalert.js"></script>  
+
+<link href="https://onlinecdlu.ac.in/assets/css/bootstrap-select.min.css" rel="stylesheet">
+<script src="https://onlinecdlu.ac.in/assets/js/bootstrap-select.min.js"></script>
+
+<script type="text/javascript">
+        // $(function() {
+        //     // Make all selects searchable
+        //     $('select').addClass('selectpicker').attr('data-live-search', 'true');
+        //     $('.selectpicker').selectpicker();
+        // });
+
+        $(function() {
+            $('select')
+                .not('.no-selectpicker')        // skip these
+                .addClass('selectpicker')
+                .attr('data-live-search', 'true');
+
+            $('.selectpicker').selectpicker();
+        });
+
+        // Handle AJAX-loaded selects
+        $(document).ajaxComplete(function() {
+            $('select').not('.selectpicker').addClass('selectpicker').attr('data-live-search', 'true');
+            $('.selectpicker').selectpicker('refresh');
+        });
+</script>
+       
+<script type="text/javascript">
+       
+       jQuery.extend(jQuery.validator.messages, {
+                required: "This field is required.",
+                email: "Please enter a valid email address.",
+                url: "Please enter a valid URL.",
+                date: "Please enter a valid date.",
+                number: "Please enter a valid number.",
+                digits: "Please enter only digits.",
+                equalTo: "Please enter the same value again.",
+                remote: "Please fix this field.",
+                dateISO: "Please enter a valid date (ISO).",
+                maxlength: jQuery.validator.format("Please enter no more than {0} characters."),
+                minlength: jQuery.validator.format("Please enter at least {0} characters."),
+                rangelength: jQuery.validator.format("Please enter a value between {0} and {1} characters long."),
+                 range: jQuery.validator.format("Please enter a value between {0} and {1}."),
+                max: jQuery.validator.format("Please enter a value less than or equal to {0}."),
+                min: jQuery.validator.format("Please enter a value greater than or equal to {0}.")
+            });
+            
+            toastr.options = {
+                "closeButton": true,               
+                "newestOnTop": false,
+                "progressBar": true,
+                "positionClass": "toast-top-right",
+                "showDuration": "300",
+                "hideDuration": "300",
+                "timeOut": "3000",              
+                "showEasing": "swing",
+                "hideEasing": "linear",
+                "showMethod": "fadeIn",
+                "hideMethod": "fadeOut"
+              }
+
+
+        $(window).on('load', function() {
+            $('#preloader').fadeOut('slow', function() { $(this).remove(); });
+        });
+  
+</script>
+
+
+
+<script src="https://onlinecdlu.ac.in/assets/vendors/newdatatable/jquery.dataTables.min.js"></script>
+<script src="https://onlinecdlu.ac.in/assets/vendors/newdatatable/dataTables.buttons.min.js"></script>
+<script src="https://onlinecdlu.ac.in/assets/vendors/newdatatable/jszip.min.js"></script>
+<script src="https://onlinecdlu.ac.in/assets/vendors/newdatatable/FileSaver.min.js"></script>
+<script src="https://onlinecdlu.ac.in/assets/vendors/newdatatable/buttons.html5.min.js"></script>
+<script src="https://onlinecdlu.ac.in/assets/vendors/newdatatable/buttons.print.min.js"></script>
 
-<div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
-
-<div class="menu_section">
-
-<ul class="nav side-menu">
-
-<li><a href="./dashboard.html"><i class="fa fa-user"></i> Profile</a></li>
-
-<li><a href="./dashboard/fee.html"><i class="fa fa-file"></i> Fee Payment</a></li>
-
-<li><a href="./dashboard/fee_receipt.html"><i class="fa fa-file"></i> Fee Receipt</a></li>
-
-<li><a href="./student/reappear_form.html"><i class="fa fa-file"></i> Reappear</a></li>
-
-<li>
-<a>
-<i class="fa fa-group"></i> Manage Student
-<span class="fa fa-chevron-down"></span>
-</a>
-
-<ul class="nav child_menu">
-
-<li><a href="./student/reevaluation.html">Re-Evaluation Form</a></li>
-
-<li><a href="./student/all_result.html">Results</a></li>
-
-<li><a href="./student/student_migration_request/index.html">Apply Inter Migration</a></li>
-
-<li><a href="./student/profile_revision_request/index.html">Profile Revision Request</a></li>
-
-</ul>
-</li>
-
-<li>
-<a>
-<i class="fa fa-graduation-cap"></i> Hostel
-<span class="fa fa-chevron-down"></span>
-</a>
-
-<ul class="nav child_menu">
-
-<li><a href="./hostel/book_bed.html">Book Bed</a></li>
-
-</ul>
-</li>
-
-<li>
-<a>
-<i class="fa fa-graduation-cap"></i> Convocation
-<span class="fa fa-chevron-down"></span>
-</a>
-
-<ul class="nav child_menu">
-
-<li><a href="./convocation/student_registration.html">Registration</a></li>
-
-<li><a href="./convocation/venue_details.html">Venue Details</a></li>
-
-<li><a href="./convocation/convocation_guidelines.html">Guidelines</a></li>
-
-</ul>
-</li>
-
-<li>
-<a>
-<i class="fa fa-image"></i>E-Grievance
-<span class="label bg-red blink ">New</span>
-<span class="fa fa-chevron-down"></span>
-</a>
-
-<ul class="nav child_menu">
-
-<li><a href="./e_grievance/grievance_complaints/index.html">Complaints/Correction</a></li>
-
-</ul>
-</li>
-
-</ul>
-
-</div>
-</div>
-</div>
-</div>
-
-<!-- top navigation -->
-
-<div class="top_nav">
-<div class="nav_menu">
-
-<nav>
-
-<div class="col-md-1">
-<div class="nav toggle">
-<a id="menu_toggle"><i class="fa fa-bars"></i></a>
-</div>
-</div>
-
-<div class="col-md-7 ">
-<div class="school-name">
-Department of Computer Science & Engineering , Chaudhary Devi Lal University, Sirsa
-</div>
-</div>
-
-<div class="col-md-4">
-
-<ul class="nav navbar-nav navbar-right">
-
-<li class="">
-<a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-
-<img src="./assets/images/default-user.png" alt="" width="60" />
-
-JAI SHREE
-<span class=" fa fa-angle-down"></span>
-
-</a>
-
-<ul class="dropdown-menu dropdown-usermenu pull-right">
-
-<li><a href="./profile/password.html">Reset Password</a></li>
-
-<li><a href="./auth/logout.html">
-<i class="fa fa-sign-out pull-right"></i> Log Out
-</a></li>
-
-</ul>
-
-</li>
-
-</ul>
-
-</div>
-
-</nav>
-</div>
-</div>
-
-<!-- page content -->
-
-<div class="right_col" role="main">
-
-<div class="row">
-
-<div class="col-md-12 col-sm-12 col-xs-12">
-
-<div class="x_panel">
-
-<div class="x_title">
-
-<h3 class="head-title">
-<i class="fa fa-calendar"></i> Fee Receipts
-</h3>
-
-<ul class="nav navbar-right panel_toolbox">
-<li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a></li>
-</ul>
-
-<div class="clearfix"></div>
-
-</div>
-
-<div class="x_content">
-
-<div class="" data-example-id="togglable-tabs">
-
-<ul class="nav nav-tabs bordered">
-
-<li class="active">
-<a href="#tab_year_list" role="tab" data-toggle="tab" aria-expanded="true">
-<i class="fa fa-list-ol"></i> List
-</a>
-</li>
-
-</ul>
-
-<br/>
-
-<div class="tab-content">
-
-<div class="tab-pane fade in active" id="tab_year_list">
-
-<div class="x_content">
-
-<table id="datatable-responsive" class="table table-striped table-bordered dt-responsive nowrap" cellspacing="0" width="100%">
-
-<thead>
-
-<th>#sl</th>
-<th>PRN No.</th>
-<th>Name</th>
-<th>Father Name</th>
-<th>Email Address</th>
-<th>Mobile No.</th>
-<th>Semester</th>
-<th>Payment Type</th>
-<th>Transaction Number</th>
-<th>Total Fees</th>
-<th>Payment Date</th>
-<th>Payment Status</th>
-<th>Action</th>
-
-</thead>
-
-<tbody>
-
-<tr role="row">
-
-<td>1</td>
-<td>25111116850049</td>
-<td>JAI SHREE</td>
-<td>PARDEEP KUMAR</td>
-<td>1451jai@gmail.com</td>
-<td>9416383219</td>
-<td>Semester-II</td>
-<td>Semester Fees</td>
-<td>176760893232939655350201</td>
-<td>26000</td>
-<td>2026-01-05 15:58:52</td>
-<td>Response pending from bank side.<br>Please contact university fee counter.</td>
-
-<td>
-<a href="./dashboard/fee_receipt_print/176760893232939655350201.html"
-class="btn btn-success btn-xs">
-<i class="fa fa-download"></i> Receipt
-</a>
-</td>
-
-</tr>
-
-<tr role="row">
-
-<td>2</td>
-<td>25111116850049</td>
-<td>JAI SHREE</td>
-<td>PARDEEP KUMAR</td>
-<td>1451jai@gmail.com</td>
-<td>9416383219</td>
-<td>Semester-II</td>
-<td>Semester Fees</td>
-<td>1767609055193807942050201</td>
-<td>26000</td>
-<td>2026-01-05 16:00:55</td>
-<td>Response pending from bank side.<br>Please contact university fee counter.</td>
-
-<td>
-<a href="./dashboard/fee_receipt_print/1767609055193807942050201.html"
-class="btn btn-success btn-xs">
-<i class="fa fa-download"></i> Receipt
-</a>
-</td>
-
-</tr>
-
-<tr role="row">
-
-<td>3</td>
-<td>25111116850049</td>
-<td>JAI SHREE</td>
-<td>PARDEEP KUMAR</td>
-<td>1451jai@gmail.com</td>
-<td>9416383219</td>
-<td>Semester-II</td>
-<td>Semester Fees</td>
-<td>176761254122020603850201</td>
-<td>26000</td>
-<td>2026-01-05 16:59:01</td>
-<td>Response pending from bank side.<br>Please contact university fee counter.</td>
-
-<td>
-<a href="./dashboard/fee_receipt_print/176761254122020603850201.html"
-class="btn btn-success btn-xs">
-<i class="fa fa-download"></i> Receipt
-</a>
-</td>
-
-</tr>
-
-<tr role="row">
-
-<td>4</td>
-<td>25111116850049</td>
-<td>JAI SHREE</td>
-<td>PARDEEP KUMAR</td>
-<td>1451jai@gmail.com</td>
-<td>9416383219</td>
-<td>Semester-II</td>
-<td>Semester Fees</td>
-<td>176761282842473363450201</td>
-<td>26000</td>
-<td>2026-01-05 17:03:48</td>
-<td>SUCCESS</td>
-
-<td>
-<a href="./dashboard/fee_receipt_print/176761282842473363450201.html"
-class="btn btn-success btn-xs">
-<i class="fa fa-download"></i> Receipt
-</a>
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
-
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-<footer class="footer no-print">
-
-<div class="pull-right">
-<p class="white">
-Copyright © Chaudhary Devi Lal University
-</p>
-</div>
-
-<div class="clearfix"></div>
-
-</footer>
-
-</div>
-</div>
-
-<!-- Bootstrap -->
-<script src="./assets/vendors/bootstrap/bootstrap.min.js"></script>
-
-<link href="./assets/vendors/datatables/rowReorder/rowReorder.dataTables.min.css" rel="stylesheet">
-<link href="./assets/vendors/datatables/rowReorder/responsive.dataTables.min.css" rel="stylesheet">
-
-<link href="./assets/vendors/datatables/buttons.dataTables.min.css" rel="stylesheet">
-<link href="./assets/vendors/datatables/dataTables.bootstrap.css" rel="stylesheet">
-
-<script src="./assets/vendors/datatables/tools/jquery.dataTables.min.js"></script>
-<script src="./assets/vendors/datatables/tools/dataTables.buttons.min.js"></script>
-<script src="./assets/vendors/datatables/tools/pdfmake.min.js"></script>
-<script src="./assets/vendors/datatables/tools/jszip.min.js"></script>
-<script src="./assets/vendors/datatables/tools/vfs_fonts.js"></script>
-<script src="./assets/vendors/datatables/tools/buttons.html5.min.js"></script>
-<script src="./assets/vendors/datatables/dataTables.bootstrap.js"></script>
-
-<script src="./assets/vendors/datatables/rowReorder/dataTables.rowReorder.min.js"></script>
-<script src="./assets/vendors/datatables/rowReorder/dataTables.responsive.min.js"></script>
-
-<link href="./assets/vendors/toastr/toastr.min.css" rel="stylesheet">
-
-<script src="./assets/js/custom.js"></script>
-
-<script src="./assets/css/sweetalert2.min.css"></script>
-<script src="./assets/js/sweetalert.js"></script>
-
-<link href="./assets/css/bootstrap-select.min.css" rel="stylesheet">
-<script src="./assets/js/bootstrap-select.min.js"></script>
 
 </body>
-</html>
+</html> 
